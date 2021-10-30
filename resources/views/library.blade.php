@@ -5,7 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>My Library</title>
+    <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <style>
@@ -13,22 +14,23 @@
     </style>
 </head>
 <body>
-<!-- w3-content defines a container for fixed size centered content,
-and is wrapped around the whole page content, except for the footer in this example -->
 <div class="w3-content" style="max-width:1400px">
 
-    <!-- Header -->
     <header class="w3-container w3-center w3-padding-32">
         <h1><b>MY Library</b></h1>
         <p>Welcome</p>
     </header>
-
-    <!-- Grid -->
+    <form action="">
+        <div class="input-group input-group-sm mb-3 ml-3" style="width: 65%">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        </div>
+    </form>
     <div class="w3-row">
-
-        <!-- Blog entries -->
         <div class="w3-col l8 s12">
-            <!-- Blog entry -->
+            <h1>Available Books</h1>
             @foreach($books as $book)
             <div class="w3-card-4 w3-margin w3-white">
                 <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80" alt="Nature" style="width:50%">

@@ -34,7 +34,7 @@ class LibrarySeeder extends Seeder
                 'title' =>'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
                 'ISBN' => 'in voluptate',
                 'pub_year' => 2012,
-                'available' => 0,
+                'available' => 1,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ],
@@ -54,7 +54,7 @@ class LibrarySeeder extends Seeder
                 'title' =>'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
                 'ISBN' => 'in voluptate',
                 'pub_year' => 2012,
-                'available' => 0,
+                'available' => 1,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ],
@@ -64,7 +64,7 @@ class LibrarySeeder extends Seeder
                 'title' =>'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
                 'ISBN' => 'in voluptate',
                 'pub_year' => 2012,
-                'available' => 0,
+                'available' => 1,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ]

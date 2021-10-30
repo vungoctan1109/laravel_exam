@@ -10,7 +10,7 @@ class LibraryController extends Controller
 {
     public function showAll()
     {
-        $books = LibraryModel::all();
+        $books = LibraryModel::where('available', '!=', '0') -> paginate(10);
         return view('library', compact('books'));
     }
 }
